@@ -1,0 +1,8 @@
+1.
+takePictureLauncher =
+    registerForActivityResult(ActivityResultContracts.TakePicture()){
+        providerFileManager.insertImageToStore(photoInfo)
+    }
+
+2. - Uri mengacu pada lokasi file yang akan digunakan kamera untuk menyimpan hasil foto atau video
+   - relativePath mengacu pada folder tujuan di MediaStore tempat file akhirnyaa akan disimpan
